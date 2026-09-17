@@ -1,0 +1,1601 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ishaaa🎂</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --pink: #ff6fae;
+    --purple: #8064d9;
+    --dark: #292331;
+    --soft: #fff5fa;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark);
+    background: #fff7fb;
+    overflow-x: hidden;
+}
+
+body:before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    opacity: .35;
+    background:
+        radial-gradient(#f5a5c7 1px, transparent 1px);
+    background-size: 22px 22px;
+}
+
+nav {
+    height: 70px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    box-shadow: 0 2px 15px #00000010;
+}
+
+.logo {
+    font: 800 23px "Baloo 2";
+    color: #ef75a8;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: var(--pink);
+}
+
+section {
+    padding: 65px 7%;
+}
+
+/* HERO */
+
+.hero {
+    min-height: 600px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(#fff 1px, transparent 1px),
+        linear-gradient(135deg, #ffc7dc, #efd8f9);
+    background-size: 27px 27px, 100% 100%;
+}
+
+.hero:before,
+.hero:after {
+    content: "🎈 ✨ 🎀 ✨ 🎈";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    font-size: 35px;
+    letter-spacing: 25px;
+    word-spacing: 20px;
+}
+
+.hero:before {
+    top: 15px;
+}
+
+.hero:after {
+    bottom: 15px;
+}
+
+.hero-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 900px;
+    margin: auto;
+}
+
+.hero-art {
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10px;
+}
+
+.cake {
+    font-size: 170px;
+    filter: drop-shadow(0 10px 10px #7e4e9c30);
+    animation: floatCake 4s ease-in-out infinite;
+}
+
+@keyframes floatCake {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+.hero h1 {
+    font: 800 clamp(38px, 6vw, 66px) "Baloo 2";
+    line-height: 1.05;
+    margin: 10px 0;
+    color: #211c29;
+}
+
+.hero p {
+    font-size: 15px;
+    margin: 20px 0 28px;
+    color: #4d3b48;
+}
+
+.btn {
+    display: inline-block;
+    border: 0;
+    border-radius: 30px;
+    padding: 13px 28px;
+    background: linear-gradient(90deg, #ed76ad, #55c5bd);
+    color: #fff;
+    font: 600 13px Poppins;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 5px 15px #b45c9c35;
+    transition: .2s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+/* GENERAL HEADINGS */
+
+.heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.heading h2 {
+    font: 800 34px "Baloo 2";
+    margin-bottom: 8px;
+}
+
+.heading p {
+    font-size: 13px;
+    color: #777;
+}
+
+/* GALLERY */
+
+.gallery {
+    background: #ffffffd9;
+}
+
+.gallery-tools {
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+.gallery-tools .btn {
+    padding: 10px 22px;
+    margin: 0 4px;
+    background: linear-gradient(90deg, #8064d9, #a66dcc);
+}
+
+.gallery-grid {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.photo {
+    background: white;
+    padding: 8px;
+    border-radius: 13px;
+    box-shadow: 0 4px 15px #00000012;
+    cursor: pointer;
+    transition: .25s;
+}
+
+.photo:hover {
+    transform: translateY(-5px);
+}
+
+.photo img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+}
+
+.photo figcaption {
+    text-align: center;
+    font-size: 12px;
+    padding: 10px;
+    color: #777;
+}
+
+.slideshow {
+    display: none;
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+}
+
+.slideshow img {
+    width: 100%;
+    max-height: 450px;
+    object-fit: contain;
+    border-radius: 15px;
+    background: white;
+}
+
+.slide-controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+/* MUSIC PLAYER */
+
+.music-section {
+    background: #ffffffb5;
+}
+
+.player {
+    max-width: 650px;
+    background: #fff;
+    margin: auto;
+    border-radius: 20px;
+    padding: 28px;
+    box-shadow: 0 8px 25px #0000000d;
+}
+
+.track-top {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.record {
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background:
+        radial-gradient(
+            circle,
+            #ff6fae 0 12%,
+            #383838 13% 28%,
+            #4d4d4d 29% 100%
+        );
+    display: grid;
+    place-items: center;
+    border: 10px solid #292929;
+    box-shadow: inset 0 0 0 1px #888;
+}
+
+.record.playing {
+    animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.track-info h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.track-info p {
+    font-size: 12px;
+    color: #999;
+}
+
+.progress {
+    width: 100%;
+    height: 5px;
+    accent-color: #e875ad;
+    cursor: pointer;
+    margin-top: 18px;
+}
+
+.time {
+    display: flex;
+    justify-content: space-between;
+    color: #777;
+    font-size: 11px;
+}
+
+.controls {
+    text-align: center;
+    margin: 18px 0;
+}
+
+.control {
+    width: 40px;
+    height: 40px;
+    border: 0;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #f38eb9, #75c9ca);
+    color: #fff;
+    font-size: 16px;
+    margin: 0 7px;
+    cursor: pointer;
+}
+
+.playlist {
+    border-top: 1px solid #eee;
+    margin-top: 25px;
+    padding-top: 12px;
+}
+
+.playlist h4 {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.song {
+    padding: 12px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.song.active {
+    background: linear-gradient(90deg, #f9ddec, #e0f6f5);
+    border-left: 3px solid #ed76ad;
+}
+
+.volume {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+}
+
+.volume input {
+    flex: 1;
+    accent-color: #e875ad;
+}
+
+/* MESSAGE */
+
+.message-section {
+    background: linear-gradient(135deg, #ffe1ef, #f1e4ff);
+    position: relative;
+    overflow: hidden;
+}
+
+.letter-card {
+    max-width: 700px;
+    margin: auto;
+    padding: 45px 35px;
+    background: #ffffffed;
+    border-radius: 25px;
+    box-shadow: 0 10px 35px #b65b9b20;
+    border: 2px solid #f7c5df;
+    text-align: center;
+    position: relative;
+}
+
+.letter-decoration {
+    font-size: 48px;
+    margin-bottom: 10px;
+    animation: heartFloat 3s ease-in-out infinite;
+}
+
+@keyframes heartFloat {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+.letter-card h3 {
+    font: 800 30px "Baloo 2";
+    color: #c13c7a;
+    margin-bottom: 20px;
+}
+
+.letter-card p {
+    color: #76586c;
+    font-size: 14px;
+    line-height: 2;
+    margin-bottom: 18px;
+}
+
+.letter-signature {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #f3c6dc;
+    color: #92647b;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.letter-signature strong {
+    color: #c13c7a;
+    font-size: 18px;
+}
+
+/* COUNTDOWN */
+
+.countdown {
+    background: #fff9fc;
+}
+
+.date-input {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.date-input label {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.date-input input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: Poppins;
+}
+
+.count-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.count-box {
+    background: white;
+    border-radius: 15px;
+    padding: 25px 10px;
+    text-align: center;
+    box-shadow: 0 6px 20px #0000000d;
+}
+
+.count-box strong {
+    display: block;
+    font: 800 32px "Baloo 2";
+    color: #ed76ac;
+}
+
+.count-box span {
+    font-size: 11px;
+    color: #777;
+}
+
+.count-message {
+    background: white;
+    max-width: 800px;
+    margin: 25px auto 0;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    font-size: 13px;
+}
+
+/* FOOTER */
+
+footer {
+    background: #333;
+    color: #eee;
+    text-align: center;
+    padding: 30px;
+    font-size: 12px;
+}
+
+/* IMAGE MODAL */
+
+.modal {
+    position: fixed;
+    inset: 0;
+    background: #000b;
+    z-index: 100;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.modal.show {
+    display: flex;
+}
+
+.modal img {
+    max-width: 95%;
+    max-height: 90vh;
+    border-radius: 15px;
+    object-fit: contain;
+}
+
+.close {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    color: white;
+    font-size: 30px;
+    background: none;
+    border: 0;
+    cursor: pointer;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    nav {
+        padding: 0 4%;
+        height: 62px;
+    }
+
+    .logo {
+        font-size: 19px;
+    }
+
+    nav ul {
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 10px;
+    }
+
+    section {
+        padding: 45px 5%;
+    }
+
+    .hero {
+        min-height: 570px;
+    }
+
+    .hero-art {
+        height: 170px;
+    }
+
+    .cake {
+        font-size: 120px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero p {
+        font-size: 13px;
+    }
+
+    .gallery-grid {
+        gap: 10px;
+    }
+
+    .photo img {
+        height: 130px;
+    }
+
+    .heading h2 {
+        font-size: 29px;
+    }
+
+    .player {
+        padding: 20px;
+    }
+
+    .record {
+        width: 80px;
+        height: 80px;
+    }
+
+    .letter-card {
+        padding: 35px 22px;
+    }
+
+    .letter-card h3 {
+        font-size: 25px;
+    }
+
+    .letter-card p {
+        font-size: 13px;
+    }
+
+    .count-grid {
+        gap: 10px;
+    }
+
+    .count-box {
+        padding: 18px 5px;
+    }
+
+    .count-box strong {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 360px) {
+
+    nav ul {
+        gap: 6px;
+    }
+
+    nav a {
+        font-size: 9px;
+    }
+
+    .logo {
+        font-size: 16px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<nav>
+
+<div class="logo">🎂 ishaaacute</div>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#music">Music</a></li>
+<li><a href="#message">Message</a></li>
+<li><a href="#countdown">Countdown</a></li>
+</ul>
+
+</nav>
+
+
+<!-- HOME -->
+
+<section class="hero" id="home">
+
+<div class="hero-inner">
+
+<div class="hero-art">
+<div class="cake">🎂</div>
+</div>
+
+<h1>Happy 20th Birthday Loveyyy! 🎉</h1>
+
+<p>
+Let's celebrate this special day together!
+</p>
+
+<a href="#gallery" class="btn">
+Start the Celebration! 🎊
+</a>
+
+</div>
+
+</section>
+
+
+<!-- MEMORY GALLERY -->
+
+<section class="gallery" id="gallery">
+
+<div class="heading">
+
+<h2>📸 Memory Gallery</h2>
+
+<p>
+Every picture tells a beautiful story.
+</p>
+
+</div>
+
+<div class="gallery-tools">
+
+<button class="btn" id="gridBtn">
+Grid View
+</button>
+
+<button class="btn" id="slideBtn">
+Slideshow
+</button>
+
+</div>
+
+
+<div class="gallery-grid" id="galleryGrid">
+
+<figure class="photo">
+
+<img
+src="1st.jpg"
+alt="Memory 1"
+>
+
+<figcaption>
+Beautiful memories 💗
+</figcaption>
+
+</figure>
+
+
+<figure class="photo">
+
+<img
+src="2nd.jpg"
+alt="Memory 2"
+>
+
+<figcaption>
+Sweet moments 🥰
+</figcaption>
+
+</figure>
+
+
+<figure class="photo">
+
+<img
+src="3rd.jpg"
+alt="Memory 3"
+>
+
+<figcaption>
+Happy together ✨
+</figcaption>
+
+</figure>
+
+
+<figure class="photo">
+
+<img
+src="4th.jpg"
+alt="Memory 4"
+>
+
+<figcaption>
+Special moments 🌸
+</figcaption>
+
+</figure>
+
+
+<figure class="photo">
+
+<img
+src="5th.jpg"
+alt="Memory 5"
+>
+
+<figcaption>
+Forever memories 💕
+</figcaption>
+
+</figure>
+
+
+<figure class="photo">
+
+<img
+src="6th.jpg"
+alt="Memory 6"
+>
+
+<figcaption>
+Love and laughter 🎀
+</figcaption>
+
+</figure>
+
+</div>
+
+
+<!-- SLIDESHOW -->
+
+<div class="slideshow" id="slideshow">
+
+<img
+id="slideImg"
+src=""
+alt="Slideshow image"
+>
+
+<div class="slide-controls">
+
+<button class="btn" id="prevSlide">
+← Previous
+</button>
+
+<button class="btn" id="nextSlide">
+Next →
+</button>
+
+</div>
+
+<p
+id="slideCaption"
+style="font-size:13px;margin-top:10px"
+></p>
+
+</div>
+
+</section>
+
+
+<!-- MUSIC -->
+
+<section class="music-section" id="music">
+
+<div class="heading">
+
+<h2>🎵 Birthday Playlist</h2>
+
+<p>
+A little music for your special day.
+</p>
+
+</div>
+
+
+<div class="player">
+
+<div class="track-top">
+
+<div class="record" id="record"></div>
+
+<div class="track-info">
+
+<h3 id="trackTitle">
+Happy Birthday Song
+</h3>
+
+<p id="trackArtist">
+Birthday Collection
+</p>
+
+</div>
+
+</div>
+
+
+<input
+type="range"
+class="progress"
+id="progress"
+min="0"
+max="100"
+value="0"
+>
+
+
+<div class="time">
+
+<span id="currentTime">
+0:00
+</span>
+
+<span id="duration">
+0:00
+</span>
+
+</div>
+
+
+<div class="controls">
+
+<button class="control" id="prevSong">
+⏮
+</button>
+
+<button class="control" id="playSong">
+▶
+</button>
+
+<button class="control" id="nextSong">
+⏭
+</button>
+
+</div>
+
+
+<div class="volume">
+
+🔊
+
+<input
+type="range"
+id="volume"
+min="0"
+max="1"
+step=".01"
+value=".7"
+>
+
+</div>
+
+
+<div class="playlist">
+
+<h4>
+🎶 Playlist
+</h4>
+
+
+<div class="song active" data-index="0">
+
+<span>
+1. Bawat Daan - Ebe Dancel
+</span>
+
+<span>
+5:00
+</span>
+
+</div>
+
+
+<div class="song" data-index="1">
+
+<span>
+2. Panaginip - Nicole
+</span>
+
+<span>
+5:12
+</span>
+
+</div>
+
+
+<div class="song" data-index="2">
+
+<span>
+3. Daylight - Taylor Swift 
+</span>
+
+<span>
+4:54
+</span>
+
+</div>
+
+</div>
+
+
+<p style="font-size:11px;color:#999;margin-top:15px">
+
+Add your own MP3 files in the JavaScript below.
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- BIRTHDAY MESSAGE -->
+
+<section class="message-section" id="message">
+
+<div class="heading">
+
+<h2>💌 A Special Message For You</h2>
+
+<p>
+A little message from my heart to yours.
+</p>
+
+</div>
+
+
+<div class="letter-card">
+
+<div class="letter-decoration">
+💗
+</div>
+
+
+<h3>
+Happy Birthday, Loveyyy kuuu 🥰 😘 🫶 
+</h3>
+
+
+<p>
+
+Happy 20th birthday, Loveyyyy🥰😘❤️ First birthday mo with me, and I’m really happy na nandito ako to celebrate this special day with you. Gustong gusto ko po talaga pumunta dyan and makasama ka sa birthday mo, kaso wala talaga. Sorry po talaga, loveyyy. 🥺😓😓 Alam mo naman po yung reason😓😓 Sensya na po at natapat pa po ngayon sa gantong problem. Sana po maintindihan mo ako. Babawi po talaga ako sa’yo soonest once na magkapera or makaipon po ulit ako 🥺🫶🫶🫶
+
+</p>
+
+
+<p>
+
+ susunod nalang po natin ituloy yung staycation, loveyyy kuu ah, Sorry po talaga, babawi po ako sa’yo soon loveyyy kuuu, Gusto ko po talaga makasama sa birthday mo and makagawa pa tayo ng maraming memories together kaso wala po talaga e🥹❤️
+</p>
+
+
+<p>
+
+I hope you enjoy your day, Loveyyy. You deserve to be happy, loved, and appreciated, not just today but every day. Thank you for being part of my life and for making me smile kahit sa simpleng bagay. I’m so lucky to have you, and I’m excited for more birthdays and special moments na sabay nating ice-celebrate. Iloveyousomuchhh,lshaaa cute Happy birthday my loveyyy🥰🎂❤️
+</p>
+
+
+<p>
+
+My birthday wish for you is that you always stay happy, healthy, and blessed. Sana po matupad lahat ng dreams mo and sana po tayo pa rin hanggang sa huli. I wish na kahit anong pagsubok ang dumating satin, piliin pa rin natin ang isa’t isa. Sana po magkasama tayo hanggang sa last breath natin loveyyy. I want to grow old with you, make more memories with you, and love you for as long as life allows us. Iloveyousomuchhh loveyyyy, my Ishaaaa 🥹❤️
+
+</p>
+
+<p>
+    Iloveyousomuchhh pooo loveyyy kuuu 🥰 😘 🫶,
+    Happy birthdayyyy ishaaacute 🥰😘😘🫶
+</p>
+
+<div class="letter-signature">
+
+With all my love,
+
+<br>
+
+<strong>
+Your Loveyyy 💕
+</strong>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- BIRTHDAY COUNTDOWN -->
+
+<section class="countdown" id="countdown">
+
+<div class="heading">
+
+<h2>⏰ Birthday Countdown</h2>
+
+<p>
+Counting down to your special day!
+</p>
+
+</div>
+
+
+<div class="date-input">
+
+<label for="birthday">
+Set Your Birthday Date:
+</label>
+
+<input
+type="datetime-local"
+id="birthday"
+>
+
+</div>
+
+
+<div class="count-grid">
+
+<div class="count-box">
+
+<strong id="days">
+0
+</strong>
+
+<span>
+DAYS
+</span>
+
+</div>
+
+
+<div class="count-box">
+
+<strong id="hours">
+0
+</strong>
+
+<span>
+HOURS
+</span>
+
+</div>
+
+
+<div class="count-box">
+
+<strong id="minutes">
+0
+</strong>
+
+<span>
+MINUTES
+</span>
+
+</div>
+
+
+<div class="count-box">
+
+<strong id="seconds">
+0
+</strong>
+
+<span>
+SECONDS
+</span>
+
+</div>
+
+</div>
+
+
+<div class="count-message" id="countMessage">
+
+🎂 Set your birthday date to start the countdown!
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+© Happy birthday loveyyy kuuu,from your kupal na bf - carlojhaye07@gmail.com
+
+</footer>
+
+
+<!-- IMAGE MODAL -->
+
+<div class="modal" id="modal">
+
+<button class="close" id="closeModal">
+×
+</button>
+
+<img
+id="modalImg"
+src=""
+alt="Expanded memory"
+>
+
+</div>
+
+
+<script>
+
+/* ====================
+   MEMORY GALLERY
+==================== */
+
+const photos = [
+    ...document.querySelectorAll(".photo img")
+];
+
+let slideIndex = 0;
+
+const grid =
+    document.getElementById("galleryGrid");
+
+const slideshow =
+    document.getElementById("slideshow");
+
+
+function showSlide() {
+
+    document.getElementById("slideImg").src =
+        photos[slideIndex].src;
+
+    document.getElementById("slideCaption").textContent =
+        photos[slideIndex].alt;
+
+}
+
+
+document.getElementById("gridBtn").onclick = () => {
+
+    grid.style.display = "grid";
+
+    slideshow.style.display = "none";
+
+};
+
+
+document.getElementById("slideBtn").onclick = () => {
+
+    grid.style.display = "none";
+
+    slideshow.style.display = "block";
+
+    showSlide();
+
+};
+
+
+document.getElementById("prevSlide").onclick = () => {
+
+    slideIndex =
+        (slideIndex - 1 + photos.length)
+        % photos.length;
+
+    showSlide();
+
+};
+
+
+document.getElementById("nextSlide").onclick = () => {
+
+    slideIndex =
+        (slideIndex + 1)
+        % photos.length;
+
+    showSlide();
+
+};
+
+
+photos.forEach(img => {
+
+    img.onclick = () => {
+
+        document.getElementById("modalImg").src =
+            img.src;
+
+        document.getElementById("modal").classList.add("show");
+
+    };
+
+});
+
+
+document.getElementById("closeModal").onclick = () => {
+
+    document.getElementById("modal").classList.remove("show");
+
+};
+
+
+document.getElementById("modal").onclick = e => {
+
+    if (e.target.id === "modal") {
+
+        e.currentTarget.classList.remove("show");
+
+    }
+
+};
+
+
+/* ====================
+   MUSIC PLAYER
+==================== */
+
+const tracks = [
+
+    {
+        title: "Happy Birthday Song",
+        artist: "Birthday Collection",
+        src: "bw.mp3"
+    },
+
+    {
+        title: "Celebration Time",
+        artist: "Birthday Collection",
+        src: "p.mp3"
+    },
+
+    {
+        title: "Party Anthem",
+        artist: "Birthday Collection",
+        src: "dl.mp3"
+    }
+
+];
+
+
+let trackIndex = 0;
+
+const audio = new Audio();
+
+const playBtn =
+    document.getElementById("playSong");
+
+const progress =
+    document.getElementById("progress");
+
+const record =
+    document.getElementById("record");
+
+
+function loadTrack(i) {
+
+    trackIndex = i;
+
+    audio.src = tracks[i].src;
+
+    document.getElementById("trackTitle").textContent =
+        tracks[i].title;
+
+    document.getElementById("trackArtist").textContent =
+        tracks[i].artist;
+
+    document.querySelectorAll(".song").forEach((el, j) => {
+
+        el.classList.toggle("active", i === j);
+
+    });
+
+    audio.load();
+
+}
+
+
+function togglePlay() {
+
+    if (!audio.src || audio.src.endsWith(location.href)) {
+
+        alert(
+            "Add an MP3 file in the tracks array in the JavaScript."
+        );
+
+        return;
+
+    }
+
+    if (audio.paused) {
+
+        audio.play();
+
+    } else {
+
+        audio.pause();
+
+    }
+
+}
+
+
+playBtn.onclick = togglePlay;
+
+
+audio.onplay = () => {
+
+    playBtn.textContent = "⏸";
+
+    record.classList.add("playing");
+
+};
+
+
+audio.onpause = () => {
+
+    playBtn.textContent = "▶";
+
+    record.classList.remove("playing");
+
+};
+
+
+audio.ontimeupdate = () => {
+
+    if (audio.duration) {
+
+        progress.value =
+            audio.currentTime / audio.duration * 100;
+
+        document.getElementById("currentTime").textContent =
+            formatTime(audio.currentTime);
+
+        document.getElementById("duration").textContent =
+            formatTime(audio.duration);
+
+    }
+
+};
+
+
+progress.oninput = () => {
+
+    if (audio.duration) {
+
+        audio.currentTime =
+            progress.value / 100 * audio.duration;
+
+    }
+
+};
+
+
+document.getElementById("prevSong").onclick = () => {
+
+    loadTrack(
+        (trackIndex - 1 + tracks.length)
+        % tracks.length
+    );
+
+};
+
+
+document.getElementById("nextSong").onclick = () => {
+
+    loadTrack(
+        (trackIndex + 1)
+        % tracks.length
+    );
+
+};
+
+
+document.getElementById("volume").oninput = e => {
+
+    audio.volume = e.target.value;
+
+};
+
+
+document.querySelectorAll(".song").forEach(el => {
+
+    el.onclick = () => {
+
+        loadTrack(
+            Number(el.dataset.index)
+        );
+
+    };
+
+});
+
+
+function formatTime(s) {
+
+    if (!Number.isFinite(s)) return "0:00";
+
+    return Math.floor(s / 60) + ":" +
+        String(Math.floor(s % 60)).padStart(2, "0");
+
+}
+
+
+loadTrack(0);
+
+
+/* ====================
+   BIRTHDAY COUNTDOWN
+==================== */
+
+const birthday =
+    document.getElementById("birthday");
+
+
+const now = new Date();
+
+now.setDate(now.getDate() + 105);
+
+now.setHours(0, 0, 0, 0);
+
+birthday.value =
+    now.toISOString().slice(0, 16);
+
+
+function countdown() {
+
+    const target =
+        new Date(birthday.value).getTime();
+
+    const diff =
+        target - Date.now();
+
+
+    if (!birthday.value || diff <= 0) {
+
+        [
+            "days",
+            "hours",
+            "minutes",
+            "seconds"
+        ].forEach(id => {
+
+            document.getElementById(id).textContent = 0;
+
+        });
+
+
+        document.getElementById("countMessage").textContent =
+            "🎉 Happy Birthday! Today is your special day!";
+
+        return;
+
+    }
+
+
+    const days =
+        Math.floor(diff / 86400000);
+
+    const hours =
+        Math.floor(diff % 86400000 / 3600000);
+
+    const mins =
+        Math.floor(diff % 3600000 / 60000);
+
+    const secs =
+        Math.floor(diff % 60000 / 1000);
+
+
+    document.getElementById("days").textContent =
+        days;
+
+    document.getElementById("hours").textContent =
+        hours;
+
+    document.getElementById("minutes").textContent =
+        mins;
+
+    document.getElementById("seconds").textContent =
+        secs;
+
+
+    document.getElementById("countMessage").textContent =
+        `🎂 ${days} days until your special day!`;
+
+}
+
+
+birthday.onchange = countdown;
+
+countdown();
+
+setInterval(countdown, 1000);
+
+</script>
+
+</body>
+</html>
